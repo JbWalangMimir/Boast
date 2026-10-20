@@ -1,0 +1,352 @@
+.current-page{
+    color:#ffffff;
+}
+
+.expenses-container{
+    display: flex;
+    gap: 16px;
+}
+
+.left-expenses-section, .right-expenses-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 40rem;
+    min-width: 0;
+}
+
+.avlbl-budg{
+    height: 40%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.expense-list{
+    background-color: #ffffff;
+    height: 60%;
+    border-radius: 10px;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.total-expenses{
+    background-color: #ffffff;
+    height: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.expense-category{
+    background-color: #ffffff;
+    height: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.budget-amount{
+    margin: 24px 0 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.total-amount{
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.is-minus{
+    color: #b91c1c;
+}
+
+.error-message{
+    margin: 0 0 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #fde8e8;
+    border: 1px solid #dc2626;
+    color: #991b1b;
+}
+
+.card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.month-select{
+    padding: 4px 12px;
+    border: 0;
+    border-radius: 999px;
+    background: #d9d9d9;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.expense-table-wrap{
+    flex: 1;
+    min-height: 0;
+    margin: 12px -20px 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.expense-table-wrap::-webkit-scrollbar{
+    display: none;
+}
+
+.expense-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expense-table th{
+    position: sticky;
+    top: 0;
+    padding: 14px 20px;
+    background: #fff0a3;
+    font-weight: 500;
+    text-align: left;
+}
+
+.expense-table td{
+    padding: 12px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.expense-table th:nth-child(2),
+.expense-table td:nth-child(2){
+    text-align: center;
+}
+
+.expense-table th:nth-child(3),
+.expense-table td:nth-child(3){
+    text-align: right;
+}
+
+.expense-table .muted{
+    display: block;
+    font-size: 12px;
+    opacity: 0.65;
+}
+
+.category-totals,
+.category-history{
+    flex: 1;
+    min-height: 0;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.category-totals::-webkit-scrollbar,
+.category-history::-webkit-scrollbar{
+    display: none;
+}
+
+.category-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.category-amount{
+    color: #1c7a2b;
+    font-weight: 600;
+    text-align: right;
+}
+
+.category-amount small{
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.category-controls{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-add{
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 6px;
+    background: #2a7d10;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.category-controls .month-select{
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 6px;
+}
+
+.category-add:hover{
+    background: #1c4919;
+}
+
+.history-item{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.history-item .history-icon{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+    background: #eeeeee;
+    color: #1c4919;
+    flex: 0 0 40px;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.history-info{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-title{
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.history-date{
+    font-size: 12px;
+    opacity: 0.65;
+}
+
+.history-amount{
+    color: #22c55e;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.empty-note{
+    margin-top: 12px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.close{
+    position: absolute;
+    top: 12px;
+    right: 28px;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.iface-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 90%;
+    max-width: 450px;
+    margin: 25vh auto;
+    padding: 24px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.expenses-title-field,
+.expenses-top-field{
+    display: flex;
+    gap: 12px;
+}
+
+.expenses-title-bundle,
+.expenses-date-bundle,
+.expenses-category-bundle,
+.expenses-source-bundle,
+.expenses-amount-bundle,
+.expenses-notes-bundle{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.iface-content input,
+.iface-content select{
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.expense-button{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #2a7d10;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.expense-button:hover{
+    background: #1c4919;
+}
+
+@media screen and (max-width: 768px) {
+    .expenses-container {
+        flex-direction: column;
+    }
+
+    .expenses-title-field,
+    .expenses-top-field{
+        flex-direction: column;
+    }
+}

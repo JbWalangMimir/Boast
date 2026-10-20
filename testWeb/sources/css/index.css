@@ -1,0 +1,147 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2FFED;
+    padding: 1rem 2rem;
+    position: sticky;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-website{
+    height: 40px;
+    width: auto;
+}
+
+.site-name a{
+    color: #1DC400;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a{
+    color: #081400;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a.l1{
+    color: #1DC400;
+}
+
+.b-sign-up, .b-login, .b-user, .b-signup2{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+li button, .b-user, .b-signup2{
+    background-color: #6AFF3D;    
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease-in;
+}
+
+li a:hover{
+    color: #1DC400;
+}
+
+li button:hover, .b-user:hover{
+    background-color: #29BD00;   
+    box-shadow: 0 0 12px rgba(0, 255, 98, 0.515); 
+    color: white;
+    border: none;
+}
+
+.logo-title-web{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    color:#ffffff;
+}
+
+.logo-title-web img {
+    height: 40px;        
+    width: auto;
+}
+
+.desc-container{
+    text-align: left;
+    margin: 6rem 0rem 0rem 6rem;
+}
+
+.main-desc{
+    background: linear-gradient(135deg, #1B8A24 0%, #29BD00 55%, #6AFF3D 100%);
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.website-descM, .website-descm{
+    color: white;
+    margin-right: 400px;
+}
+
+.brief-desc{
+    background-color: red;
+}
+
+.b-desc-container{
+    display: flex;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 100px;
+}
+
+.img1-container, .text1-container{
+    flex: 1;
+    padding: 5px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.b-img1{
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.img1-container{
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.b-text1, .learn-more{
+    color:#0d5300;
+}
+
+.b-content1{
+    text-align: justify;
+    color:#0d5300;
+    font-size:large;
+}

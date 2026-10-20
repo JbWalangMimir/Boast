@@ -1,0 +1,95 @@
+:root {
+    --bg: #1c4919;
+    --sidebar: #ffffff;
+    --text: #1c4919;
+    --main-text: rgba(5, 26, 0, 0.95);
+    --on-bg: #ffffff;
+    --strong: #4f814d;
+    --on-strong: #ffffff;
+    --soft: #ccdfcb;
+    --card: #ffffff;
+    --accent: #90f38d;
+    --hover: rgba(97, 97, 97, 0.15);
+    --border: rgba(28, 73, 25, 0.2);
+    --sidebar-text: #1c4919;
+    --on-accent: #1c4919;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+#sidebar {
+    background-color: var(--sidebar);
+    color: var(--sidebar-text);
+}
+
+.main-container {
+    color: var(--main-text);
+}
+
+.current-page {
+    color: var(--on-bg);
+}
+
+.sidebar-list-item:hover {
+    background-color: var(--hover);
+}
+
+.sidebar-list-item.active {
+    background-color: var(--accent);
+    color: var(--on-accent);
+}
+
+.sidebar-user {
+    border-top: 1px solid var(--hover);
+}
+
+.user-avatar,
+.user-name {
+    color: var(--sidebar-text);
+}
+
+.logout-link:hover {
+    background-color: var(--strong);
+}
+
+.data-balance,
+.data-summary {
+    background-color: var(--strong);
+}
+
+.data-goals {
+    background-color: var(--card);
+}
+
+.data-activity,
+.data-graph,
+.income-history {
+    background-color: var(--soft);
+}
+
+.history-table th {
+    background: var(--soft);
+    border-bottom: 2px solid var(--border);
+}
+
+.history-table td {
+    border-bottom: 1px solid var(--border);
+}
+
+.record-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.history-select {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+}
+
+.range-tab.active {
+    background: var(--accent);
+    color: var(--text);
+}

@@ -1,0 +1,209 @@
+.current-page{
+    color:#ffffff;
+}
+
+h3{
+    color:#ffffff;
+}
+
+.header-report{
+    box-shadow: 0 6px 1px -3px rgba(0, 0, 0, 0.35);
+    padding: 0px 0px 10px 20px;
+}
+
+[hidden]{
+    display: none !important;
+}
+
+.reports-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.financial-summary-area{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.financial-summary,
+.budget-performance,
+.income-sources,
+.income-allocations,
+.income-trend,
+.expense-sources,
+.expense-allocations,
+.expense-trend{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: #001401;
+    min-width: 0;
+}
+
+.financial-summary,
+.budget-performance{
+    min-height: 12rem;
+}
+
+.card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-head h2,
+.income-sources h2,
+.income-allocations h2,
+.income-trend h2,
+.expense-sources h2,
+.expense-allocations h2,
+.expense-trend h2{
+    margin: 0;
+    font-size: 18px;
+}
+
+.month-select{
+    padding: 4px 12px;
+    border: 0;
+    border-radius: 999px;
+    background: #d9d9d9;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.perf-month{
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.summary-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.summary-tile{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #f3f3f3;
+}
+
+.summary-tile span{
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.summary-tile strong{
+    font-size: 20px;
+}
+
+.is-income{
+    color: #1c7a2b;
+}
+
+.is-expense{
+    color: #b91c1c;
+}
+
+.is-saving{
+    color: #0d6efd;
+}
+
+.perf-figures{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.perf-figures div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.perf-figures span{
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.perf-figures strong{
+    font-size: 20px;
+}
+
+.perf-bar{
+    height: 12px;
+    margin: 16px 0 10px;
+    border-radius: 999px;
+    background: #dddddd;
+    overflow: hidden;
+}
+
+.perf-bar span{
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    background: #2a7d10;
+}
+
+.perf-bar.is-over span{
+    background: #dc2626;
+}
+
+.perf-result{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.perf-result.is-over-text{
+    color: #b91c1c;
+}
+
+.income-report-title h1, .Expense-report-title h1{
+    margin: 8px 0 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.income-area, .expense-area{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.income-sources, .income-allocations, .income-trend, .expense-sources, .expense-allocations, .expense-trend{
+    display: flex;
+    flex-direction: column;
+    min-height: 18rem;
+}
+
+.chart-box{
+    position: relative;
+    flex: 1;
+    min-height: 220px;
+    margin-top: 12px;
+}
+
+.empty-note{
+    margin: 24px 0;
+    text-align: center;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+    .financial-summary-area,
+    .income-area,
+    .expense-area{
+        grid-template-columns: 1fr;
+    }
+}
